@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../Header'
 import {Container,Row,Col} from 'react-bootstrap'
 import {NavLink} from 'react-router-dom'
+import './style.css'
 export default function Layout(props) {
     return (
         <>

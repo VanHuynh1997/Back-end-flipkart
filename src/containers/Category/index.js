@@ -17,11 +17,6 @@ export default function Category(props) {
 
     const handleClose = () =>{
         const form = new FormData();
-        // const cat = {
-        //    categoryName,
-        //    parentCategoryId,
-        //    categoryImage 
-        // }
         form.append('name',categoryName)
         form.append('parentId',parentCategoryId)
         form.append('categoryImage',categoryImage)
@@ -68,7 +63,7 @@ export default function Category(props) {
                     <Col md={12} >
                         <div style={{display:'flex', justifyContent:'space-between'}}>
                             <h3>Category</h3>
-                            <Button variant="primary" onClick={handleShow}>
+                            <Button variant="primary" style={{marginTop:'10px'}} onClick={handleShow}>
                                 Add Category
                             </Button>
                             
